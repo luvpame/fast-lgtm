@@ -1,0 +1,13 @@
+{
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "exactOptionalPropertyTypes": true,
+    "jsx": "react-jsx",
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "useDefineForClassFields": true
+  }
+}

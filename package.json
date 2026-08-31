@@ -1,0 +1,35 @@
+{
+  "name": "fast-lgtm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prepare a GitHub pull request review with a saved LGTM template.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --deny-warnings .",
+    "typecheck": "wxt prepare && tsc --noEmit",
+    "test": "vitest run",
+    "check": "bun run format:check && bun run lint && bun run typecheck && bun run test && bun run build",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@wxt-dev/module-react": "^1.2.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "wxt": "^0.21.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.325",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "jsdom": "^30.0.1",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}

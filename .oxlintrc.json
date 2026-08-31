@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true,
+    "webextensions": true
+  },
+  "ignorePatterns": [".output/**", ".wxt/**", "coverage/**"],
+  "plugins": ["oxc", "react", "typescript", "unicorn"]
+}
